@@ -109,3 +109,5 @@ docker-compose up -d unified-simulator
 ```bash
 docker logs unified_simulator
 ```
+### ensure that you have enable all the ports 
+
