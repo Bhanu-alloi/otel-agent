@@ -108,7 +108,9 @@ docker-compose build unified-simulator
 ```bash
 docker-compose up -d unified-simulator
 ```
-
+```
+refer: https://github.com/opshealth/gpu-monitoring/blob/main/unified-simulator/README.md
+```
 ### Check Logs
 
 ```bash
