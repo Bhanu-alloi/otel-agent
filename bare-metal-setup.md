@@ -15,7 +15,9 @@ sudo apt install -y \
   curl wget git htop nano vim unzip ca-certificates gnupg \
   lsb-release net-tools sysstat iotop jq
 ```
-
+```bash
+sudo apt install -y   ipmitool smartmontools lm-sensors nvme-cli
+```
 ### Configure Automatic Security Updates
 
 ```bash
