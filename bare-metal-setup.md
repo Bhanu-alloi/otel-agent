@@ -65,8 +65,8 @@ Description=Prometheus Node Exporter
 After=network.target
 
 [Service]
-User=monitoring
 ExecStart=/usr/local/bin/node_exporter
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
