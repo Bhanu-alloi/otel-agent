@@ -41,7 +41,12 @@ sudo mkdir -p /etc/otel-collector
 ```bash
 sudo nano /etc/otel-collector/otel-agent-config.yaml
 ```
-
+```
+refer: https://github.com/opshealth/gpu-monitoring/blob/main/otel-collector-config.yaml
+```
+```
+below is only some part of config of otel collector agent
+```
 ```yaml
 receivers:
   # Prometheus receivers for different device categories
@@ -52,7 +57,7 @@ receivers:
           scrape_interval: 15s
           static_configs:
             - targets: 
-                - '<baremetal-server-ip>:9100'
+                - '<baremetal-server-ip>:9100'  # replace baremetal-server-ip with the public ip
                 - '<baremetal-server-ip>:9290'
                 - '<baremetal-server-ip>:9633'
 
@@ -122,7 +127,7 @@ processors:
 
 exporters:
   otlphttp:
-    endpoint: "http://<your-otlp-endpoint>:4318"
+    endpoint: "http://<your-otlp-endpoint>:4318"    #replace withe loadbalancer of otel collector
 
 service:
   pipelines:
