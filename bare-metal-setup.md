@@ -82,6 +82,8 @@ WantedBy=multi-user.target
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now node_exporter
+sudo systemctl status node_exporter
+
 ```
 
 ### Verify Node Exporter is Running
