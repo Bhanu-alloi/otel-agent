@@ -90,7 +90,9 @@ curl http://localhost:9100/metrics
 ```bash
 git clone https://github.com/opshealth/gpu-monitoring.git
 ```
-
+### Install docker and docker compose
+``` Install docker and docker compose
+```
 ### Build the Unified Simulator
 
 ```bash
