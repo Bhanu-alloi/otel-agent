@@ -171,3 +171,8 @@ sudo systemctl enable otel-collector-agent.service
 sudo systemctl start otel-collector-agent.service
 sudo systemctl status otel-collector-agent.service
 ```
+## To check agent is sending metrics or not 
+
+```bash
+curl -s http://localhost:8888/metrics | head
+```
