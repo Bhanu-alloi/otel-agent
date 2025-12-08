@@ -78,6 +78,25 @@ curl http://localhost:9100/metrics
 ```
 
 ## Other Exporters Setup
+### List of simulators
+```
+gpu_simulator
+infiniband_simulator
+ipmi_simulator
+kernel_log_simulator
+kubernetes_simulator
+log_simulator
+loki_logger
+netq_simulator
+network_simulator
+process_simulator
+rafay_inventory_simulator
+raid_simulator
+security_simulator
+smart_simulator
+vm_simulator
+weka_simulator
+```
 
 ### Clone the GitHub Repository
 
