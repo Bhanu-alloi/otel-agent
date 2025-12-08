@@ -28,6 +28,11 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ```
 Install docker and docker compose
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl enable --now docker
+sudo usermod -aG docker $USER
+newgrp docker
 ```
 
 ## Node Exporter Installation
