@@ -117,6 +117,9 @@ docker-compose build unified-simulator
 docker-compose up -d unified-simulator
 ```
 ```
+docker run -d   --name unified_simulator   --add-host=host.docker.internal:host-gateway   -e OTEL_EXPORTER_OTLP_ENDPOINT=host.docker.internal:4317     -p 8010:8010   -p 9118:9118   -p 9256:9256   -p 9290:9290   -p 9400:9400   -p 9537:9537   -p 9600:9600   -p 9627:9627   -p 9633:9633   -p 9640:9640   -p 9650:9650   -p 9700:9700   -p 9800:9800   gpu-monitoring-unified-simulator
+```
+```
 refer: https://github.com/opshealth/gpu-monitoring/blob/main/unified-simulator/README.md
 ```
 ### Check Logs
