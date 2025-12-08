@@ -114,7 +114,7 @@ git clone https://github.com/opshealth/gpu-monitoring.git
 ### Build the Unified Simulator
 
 ```bash
-cd /path/to/gpu-monitoring
+cd gpu-monitoring
 docker-compose build unified-simulator
 ```
 
