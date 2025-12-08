@@ -27,14 +27,20 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 ### Install docker and docker compose
 
 ```
-Install docker and docker compose
 sudo apt update
 sudo apt install -y docker.io
 sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+```
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose --version
+
+```
 ## Node Exporter Installation
 
 ### Download Node Exporter for AMD64
